@@ -1,7 +1,79 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 {% load static %}
-<title>{% block title %}skills{% endblock title %}</title>
+<title>
+  {% block title %}
+    Projects
+  {% endblock %}
+</title>
 
 {% block content %}
-<h1>My projects</h1>
-{% endblock content %}
+  <div class="container py-5">
+    <div class="text-center mb-5">
+      <h1 class="fw-bold text-primary">My Projects</h1>
+      <p class="text-secondary">A selection of my work in Data Analysis, Machine Learning, and full-stack development.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card custom-card h-100 text-white rounded-4 overflow-hidden shadow-blue" style="background-color:rgb(10, 10, 36); ">
+          <img src="{% static 'images\img1.png' %}" class="card-img-top" />
+
+          <div class="card-body">
+            <h2 class="card-title fw-bold">Crop Recommendation System</h2>
+            <p class="card-text">Full-stack Smart Machine Learning Crop Recommendation System Using Django...</p>
+
+            <div class="mb-3">
+              <span class="badge bg-info">Django</span>
+              <span class="badge bg-info">Python</span>
+              <span class="badge bg-info">Scikit-learn</span>
+              <span class="badge bg-info">Postgres</span>
+              <span class="badge bg-info">Bootstrap 5</span>
+            </div>
+
+            <a href="https://crop-recommendation-git-main-jerrycode.vercel.app/" class="text-info text-decoration-none">🔗 Live Site</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card custom-card h-100 text-white rounded-4 overflow-hidden shadow-blue" style="background-color:rgb(10, 10, 36);">
+          <img src="{% static 'images\img2.png' %}" class="card-img-top" />
+
+          <div class="card-body">
+            <h2 class="fw-bold">Account Spent</h2>
+            <p>Account Spent is a Streamlit web app that trackes finances ...</p>
+
+            <div class="mb-3">
+              <span class="badge bg-info">Python</span>
+              <span class="badge bg-info">Streamlit</span>
+              <span class="badge bg-info">Pandas</span>
+              <span class="badge bg-info">Firebase Authentication</span>
+            </div>
+
+            <a href="https://account-spend-40.streamlit.app/" class="text-info text-decoration-none">🔗 Live Site</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card custom-card h-100 text-white rounded-4 overflow-hidden shadow-blue" style="background-color:rgb(10, 10, 36);">
+          <img src="{% static 'images\img3.png' %}" class="card-img-top" />
+
+          <div class="card-body">
+            <h2 class="fw-bold">Mine-From-Table</h2>
+            <p>Interactive Data Preprocessing and Visualization Platform ...</p>
+
+            <div class="mb-3">
+              <span class="badge bg-info">Python</span>
+              <span class="badge bg-info">Streamlit</span>
+              <span class="badge bg-info">Pandas</span>
+              <span class="badge bg-info">Matplotlib</span>
+              <span class="badge bg-info">MySQL</span>
+            </div>
+
+            <a href="https://mine-from-table-40.streamlit.app/" class="text-info text-decoration-none">🔗 Live Site</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
