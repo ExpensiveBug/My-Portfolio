@@ -1,67 +1,59 @@
 {% extends 'base.html' %}
 {% load static %}
-<title>
-  {% block title %}
-    Connect
-  {% endblock %}
-</title>
+
+{% block title %}Connect{% endblock %}
 
 {% block content %}
-<div class="container py-5 text-secondary">
+<div class="container py-4 py-md-5 text-secondary">
 
-  <!-- TITLE -->
-  <div class="text-center">
+  <div class="text-center mb-4">
     <h1 class="section-title text-primary">
       Let's Connect
     </h1>
   </div>
 
-  <!-- INFO CARDS -->
-  <div class="row g-4 shadow-blue mt-5 mb-5 p-5 rounded-4">
+  <!-- INFO -->
+  <div class="row g-3 shadow-blue mt-4 p-3 p-md-5 rounded-4 text-center">
 
-    <div class="col-md-4">
-      <div class="skill-card shadow-lg p-4 text-center">
-        <h5><i class="fa-solid fa-envelope"></i>  Email: nidhireddu40@gmail.com</h5>
+    <div class="col-12 col-md-4">
+      <div class="skill-card shadow-lg p-3 p-md-4 h-100">
+        <h5 class = "mb-0"><i class="fa-solid fa-envelope"></i>  Email: abcdefghijklmn@gmail.com</h5>
       </div>
     </div>
 
-    <div class="col-md-4">
-      <div class="skill-card shadow-lg p-4 text-center">
-        <h5><i class="fa-solid fa-phone"></i>  Mobile: +91 8307720212</h5>
+    <div class="col-12 col-md-4">
+      <div class="skill-card shadow-lg p-3 p-md-4 h-100">
+        <h5><i class="fa-solid fa-phone"></i>  Mobile: +91 0000000000</h5>
       </div>
     </div>
 
-    <div class="col-md-4">
-      <div class="skill-card shadow-lg p-4 text-center">
-        <h5><i class="fa-solid fa-location-dot"></i>  Location: Haryana, India</h5>
+    <div class="col-12 col-md-4">
+      <div class="skill-card shadow-lg p-3 p-md-4 h-100">
+        <h5><i class="fa-solid fa-location-dot"></i>  Location: USA</h5>
       </div>
     </div>
 
     <div class="text-center mt-5">
+      <p class="text-secondary mb-3 mb-md-4">Connect on social media</p>
   
-      <p class="text-secondary mb-4">
-        Connect on social media
-      </p>
-  
-      <div class="d-flex justify-content-center gap-3 social-icons">
+      <div class="d-flex justify-content-center flex-wrap gap-3 social-icons">
   
         <a href="https://www.linkedin.com/nidhi-reddu-ml/" target="_blank" class="icon">
-          <i class="fab fa-linkedin-in" style="font-size:25px;"></i>
+          <i class="fab fa-linkedin-in fs-5"></i>
         </a>
   
         <a href="https://github.com/ExpensiveBug" target="_blank" class="icon">
-          <i class="fab fa-github" style="font-size:25px;"></i>
+          <i class="fab fa-github fs-5"></i>
         </a>
   
         <a href="mailto:nidhireddu40@email.com" class="icon">
-          <i class="fas fa-envelope" style="font-size:25px;"></i>
+          <i class="fas fa-envelope fs-5"></i>
         </a>
   
       </div>
   
     </div>
   </div>
-
 
 </div>
 {% endblock %}
