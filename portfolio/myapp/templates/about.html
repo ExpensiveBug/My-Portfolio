@@ -1,10 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
-<title>
-  {% block title %}
-    About
-  {% endblock %}
-</title>
+
+{% block title %}About{% endblock %}
 
 {% block content %}
   <section class="about-section py-5">
@@ -15,59 +12,58 @@
       </div>
 
       <div class="row align-items-center">
-        <div class="col-lg-6 text-white shadow-blue rounded-4 p-4">
-          <h3>Background</h3>
-          <p class="about-text">Hi, I'm Nidhi, a 2nd-year BSc Computer Science (AI & Data Science) student with a strong interest in data science and machine learning. I enjoy working with Python and tools like Pandas, NumPy, and Matplotlib to analyze data and build meaningful insights.</p>
+        <div class="col-12 col-lg-6 text-white shadow-blue rounded-4 p-3 p-md-4 p-lg-5 ">
+          <h3 class="mb-3">Background</h3>
+          <p class="about-text small small-md-normal">Hi, I'm xxxxx, a 2nd-year BSc Computer Science (AI & Data Science) student with a strong interest in data science and machine learning. I enjoy working with Python and tools like Pandas, NumPy, and Matplotlib to analyze data and build meaningful insights.</p>
 
-          <div class="highlight-box mt-4">I have experience building projects such as a crop recommendation system, expense tracker, and data-driven applications using Django and Streamlit.</div>
+          <div class="highlight-box mt-3 mt-md-4 small small-md-normal">I have experience building projects such as a crop recommendation system, expense tracker, and data-driven applications using Django and Streamlit.</div>
 
-          <p class="about-text mt-4">I'm a fast learner, problem solver, and enjoy debugging and improving my code. Currently, I'm focused on growing my skills and looking for opportunities to start my career in the tech industry.</p>
+          <p class="about-text mt-3 mt-md-4 small small-md-normal">I'm a fast learner, problem solver, and enjoy debugging and improving my code. Currently, I'm focused on growing my skills and looking for opportunities to start my career in the tech industry.</p>
         </div>
 
         <!-- RIGHT SIDE CARDS -->
         <div class="col-lg-6">
-          <div class="row g-4 text-white ms-4">
-            <div class="col-6 rounded-4">
-              <div class="skill-card shadow-blue p-5 rounded-4">Python</div>
-            </div>
-            <div class="col-6">
-              <div class="skill-card shadow-blue p-5 rounded-4">Machine Learning</div>
+          <div class="row g-3 text-white mt-2">
+            <div class="col-12 col-sm-6 ">
+              <div class="skill-card shadow-blue p-4 p-md-5 rounded-4 text-center">Python</div>
             </div>
 
-            <div class="col-6">
-              <div class="skill-card shadow-blue p-5 rounded-4">Data Science</div>
+            <div class="col-12 col-sm-6">
+              <div class="skill-card shadow-blue p-4 p-md-5 rounded-4 text-center">Machine Learning</div>
             </div>
 
-            <div class="col-6">
-              <div class="skill-card shadow-blue p-5 rounded-4">Data Analysis</div>
+            <div class="col-12 col-sm-6">
+              <div class="skill-card shadow-blue p-4 p-md-5 rounded-4 text-center">Data Science</div>
             </div>
 
-            <div class="col-6">
-              <div class="skill-card shadow-blue p-5 rounded-4">Data Visualization</div>
+            <div class="col-12 col-sm-6">
+              <div class="skill-card shadow-blue p-4 p-md-5 rounded-4 text-center">Data Analysis</div>
             </div>
 
-            <div class="col-6">
-              <div class="skill-card shadow-blue p-5 rounded-4">Python Development</div>
+            <div class="col-12 col-sm-6">
+              <div class="skill-card shadow-blue p-4 p-md-5 rounded-4 text-center">Data Visualization</div>
+            </div>
+
+            <div class="col-12 col-sm-6">
+              <div class="skill-card shadow-blue p-4 p-md-5 rounded-4 text-center">Python Development</div>
             </div>
           </div>
         </div>
-        <!-- TECHNICAL SKILLS  -->
-        <div class="container py-5 text-secondary">
-            <div class="d-flex justify-content-center">
-                <h1 class="section-title text-primary">
-                    Technical Skills
-                </h1>
-            </div>
+        <!-- TECHNICAL SKILLS -->
+        <div class="container py-5 text-secondary mt-3">
+          <div class="d-flex justify-content-center">
+            <h1 class="section-title text-primary">Technical Skills</h1>
+          </div>
           <p class="sub-text text-center">My expertise in various technologies and tools</p>
 
           <div class="row g-4 shadow-blue mt-5 mb-4 p-4 rounded-4">
             <div class="skill-card text-white">
-                <h3>Programming Languages</h3>
-            </div>  
+              <h3><i class="fas fa-code"></i>Programming Languages</h3>
+            </div>
             <div class="col-md-3">
-                <div class="skill-card shadow-lg p-4">
-                    <h5>Python</h5>
-                </div>
+              <div class="skill-card shadow-lg p-4">
+                <h5>Python</h5>
+              </div>
             </div>
 
             <div class="col-md-3">
@@ -87,22 +83,16 @@
                 <h5>Java</h5>
               </div>
             </div>
-
-            <div class="col-md-3">
-              <div class="skill-card shadow-lg p-4">
-                <h5>JavaScript</h5>
-              </div>
-            </div>
           </div>
 
           <div class="row g-4 shadow-blue rounded-4 p-4 mt-5 mb-4">
-            <div class="skill-card text-white ">
-                <h3>Data Analysis & Visualization</h3>
-            </div>  
+            <div class="skill-card text-white">
+              <h3><i class="fas fa-chart-line"></i>Data Analysis & Visualization</h3>
+            </div>
             <div class="col-md-3">
-                <div class="skill-card shadow-lg p-4">
-                    <h5>Python</h5>
-                </div>
+              <div class="skill-card shadow-lg p-4">
+                <h5>Python</h5>
+              </div>
             </div>
 
             <div class="col-md-3">
@@ -134,17 +124,16 @@
                 <h5>Django</h5>
               </div>
             </div>
-
           </div>
 
           <div class="row g-4 shadow-blue rounded-4 p-4 mb-4 mt-5">
-            <div class="skill-card text-white ">
-                <h3>Databases & Tools</h3>
-            </div>  
+            <div class="skill-card text-white">
+              <h3><i class="fas fa-database"></i>Databases & Tools</h3>
+            </div>
             <div class="col-md-3">
-                <div class="skill-card shadow-lg p-4">
-                    <h5>MySQL</h5>
-                </div>
+              <div class="skill-card shadow-lg p-4">
+                <h5>MySQL</h5>
+              </div>
             </div>
 
             <div class="col-md-3">
