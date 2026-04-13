@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 
-echo "===> Installing Requirements..."
-python3 -m pip install -r requirements.txt
+# echo "===> Installing Requirements..."
+# python3 -m pip install -r requirements.txt
 
 # echo "===> Running Migrations..."
 # python3 manage.py migrate --noinput
