@@ -53,6 +53,7 @@ python manage.py runserver
 ```
 
 ## Project Structure 
+```bash
 portfolio/
 │
 ├── manage.py
@@ -60,28 +61,28 @@ portfolio/
 ├── build.sh
 ├── vercel.json
 │
-├── portfolio/                
+├── portfolio/
 │   ├── __init__.py
 │   ├── asgi.py
 │   ├── settings.py
 │   ├── urls.py
 │   └── wsgi.py
 │
-├── myapp/                   
+├── myapp/
 │   ├── migrations/
 │   │   └── __init__.py
 │   │
 │   ├── static/
-|   |   ├── Resume.pdf
-|   |   ├── favicon.png
+│   │   ├── Resume.pdf
+│   │   ├── favicon.png
 │   │   └── myapp/
 │   │       ├── css/
-│   │       |    └── style.css/
+│   │       │   └── style.css
 │   │       └── images/
-|   │            |── img1.png
-│   │            ├── img2.png
-│   │            ├── img3.png
-│   │            └── profile.png
+│   │           ├── img1.png
+│   │           ├── img2.png
+│   │           ├── img3.png
+│   │           └── profile.png
 │   │
 │   ├── templates/
 │   │   └── myapp/
@@ -98,3 +99,4 @@ portfolio/
 │   ├── tests.py
 │   ├── urls.py
 │   └── views.py
+```
